@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.field {
+  padding: 10px;
+  border: 1px gray solid;
+  border-radius: 5px;
+  outline: none;
+}

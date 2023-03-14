@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import * as api from '../../shared/contacts-api';
+import * as api from '../../shared/api/contacts-api';
 
 export const fetchAllContacts = createAsyncThunk(
   'contacts/fetchAll',

@@ -3,13 +3,13 @@ import { nanoid } from 'nanoid';
 const items = [
   {
     id: nanoid(),
-    text: 'Contacts page',
-    link: '/contacts',
+    text: 'Home page',
+    link: '/',
   },
   {
     id: nanoid(),
-    text: 'Home page',
-    link: '/',
+    text: 'Contacts page',
+    link: '/contacts',
   },
 ];
 

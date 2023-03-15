@@ -2,7 +2,8 @@
 
 body {
   margin: 0;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #020291;
+  font-family: Helvetica, sans-serif, solid;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

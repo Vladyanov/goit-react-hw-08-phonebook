@@ -6,7 +6,7 @@ import UserMenu from './UserMenu/UserMenu';
 
 import { isUserLogin } from '../../redux/auth/auth-selector';
 
-import css from './navbar.module.css';
+import css from './navbar.module.scss';
 
 import items from './items';
 

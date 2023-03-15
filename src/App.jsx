@@ -7,11 +7,12 @@ import Navbar from 'components/Navbar/Navbar';
 import UserRoutes from './UserRoutes';
 
 import { store, persistor } from './redux/store';
+import Loader from 'shared/Loader/Loader';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+      <PersistGate loading={<Loader />} persistor={persistor}>
         <AuthLayout>
           <BrowserRouter>
             <Navbar />

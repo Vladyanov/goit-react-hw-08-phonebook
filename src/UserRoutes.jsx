@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import PrivateRoute from 'module/PrivateRoute/PrivateRoute';
 import PublicRoute from 'module/PublicRoute/PublicRoute';
+import Loader from 'shared/Loader/Loader';
 
 const HomePage = lazy(() => import('./components/pages/HomePage/HomePage'));
 const PhoneBook = lazy(() => import('./components/PhoneBook/PhoneBook'));
@@ -13,7 +14,7 @@ const LoginPage = lazy(() => import('./components/pages/LoginPage/LoginPage'));
 
 const UserRoutes = () => {
   return (
-    <Suspense fallback={<p>...loading</p>}>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route element={<PublicRoute />}>
           <Route path="/register" element={<RegisterPage />} />

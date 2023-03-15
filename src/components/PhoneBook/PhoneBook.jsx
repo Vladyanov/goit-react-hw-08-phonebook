@@ -43,10 +43,10 @@ const PhoneBook = () => {
   };
 
   return (
-    <>
+    <div className={css.phonebook}>
       <div className={css.block}>
         <h3 className={css.title}>Phone Book</h3>
-        <ContactsForm onSubmit={onAddContact} />
+        <ContactsForm className={css.form} onSubmit={onAddContact} />
       </div>
       <div className={css.block}>
         <ContactsFilter value={filter} handleChange={handleFilter} />
@@ -55,7 +55,7 @@ const PhoneBook = () => {
           removeContact={handleRemoveContact}
         />
       </div>
-    </>
+    </div>
   );
 };
 

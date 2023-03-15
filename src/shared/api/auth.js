@@ -11,8 +11,8 @@ const setToken = token => {
   instance.defaults.headers.authorization = '';
 };
 
-export const signup = data => {
-  const { data: result } = instance.post('/users/signup', data);
+export const signup = async data => {
+  const { data: result } = await instance.post('/users/signup', data);
   setToken(result.token);
   return result;
 };
